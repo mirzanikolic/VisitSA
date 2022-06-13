@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/attractions"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/attractions_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/attractions_message"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_bjelasnica"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/attractions_welcome">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_bjelasnica"
+                    android:layout_width="match_parent"
+                    android:layout_height="285dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/attractions_bjelasnica"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_bjelasnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bjela_nica"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_bjelasnica"
+                    app:layout_constraintTop_toBottomOf="@+id/img_bjelasnica" />
+
+                <TextView
+                    android:id="@+id/location_bjelasnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/bjela_nica_sarajevo_71000"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_bjelasnica"
+                    app:layout_constraintTop_toBottomOf="@+id/title_bjelasnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_bjelasnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/bjelasnica_hours"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_bjelasnica"
+                    app:layout_constraintTop_toBottomOf="@+id/location_bjelasnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_bjelasnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/monday_sunday_00_24h"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_bjelasnica"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_bjelasnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_bjelasnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/bjelasnica"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_bjelasnica"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_bjelasnica"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_walter"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_bjelasnica">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_igman"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/attractions_igman"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_igman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/igman"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_igman"
+                    app:layout_constraintTop_toBottomOf="@+id/img_igman" />
+
+                <TextView
+                    android:id="@+id/location_igman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/location_igman"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_igman"
+                    app:layout_constraintTop_toBottomOf="@+id/title_igman"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_igman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_igman"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_igman"
+                    app:layout_constraintTop_toBottomOf="@+id/location_igman"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_igman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_walter"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_igman"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_igman"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_igman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/text_igman"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_igman"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_igman"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_dorian"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_walter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_vijecnica"
+                    android:layout_width="match_parent"
+                    android:layout_height="275dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/attractions_vijecnica"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_vijecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vije_nica"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_vijecnica"
+                    app:layout_constraintTop_toBottomOf="@+id/img_vijecnica" />
+
+                <TextView
+                    android:id="@+id/location_vijecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/obala_kulina_bana_sarajevo_71000"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_vijecnica"
+                    app:layout_constraintTop_toBottomOf="@+id/title_vijecnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_vijecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/_387_33_443_152"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_vijecnica"
+                    app:layout_constraintTop_toBottomOf="@+id/location_vijecnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_vijecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/monday_sunday_9am_5pm"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_vijecnica"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_vijecnica"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_vijecnica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/vije_nica_is_the_most_extravagant_building_constructed_in_sarajevo_during_the_austro_hungarian_occupation_and_serves_as_a_symbol_of_the_meeting_of_world_civilizations"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_vijecnica"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_vijecnica"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

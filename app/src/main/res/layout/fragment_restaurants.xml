@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/restaurants"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restaurants_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/restaurant_desc"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_bjelasnica"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/restaurants_welcome">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_avlija"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/restaurants_avlija"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_avlija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avlija"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_avlija"
+                    app:layout_constraintTop_toBottomOf="@+id/img_avlija" />
+
+                <TextView
+                    android:id="@+id/location_avlija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/location_avlija"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_avlija"
+                    app:layout_constraintTop_toBottomOf="@+id/title_avlija"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_avlija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_avlija"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_avlija"
+                    app:layout_constraintTop_toBottomOf="@+id/location_avlija"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_avlija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_avlija"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_avlija"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_avlija"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_avlija"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/description_avlija"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_avlija"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_avlija"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_walter"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_bjelasnica">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_mrkva"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/restaurants_mrkva"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_mrkva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrkva"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_mrkva"
+                    app:layout_constraintTop_toBottomOf="@+id/img_mrkva" />
+
+                <TextView
+                    android:id="@+id/location_mrkva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/location_mrkva"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_mrkva"
+                    app:layout_constraintTop_toBottomOf="@+id/title_mrkva"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_mrkva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_mrkva"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_mrkva"
+                    app:layout_constraintTop_toBottomOf="@+id/location_mrkva"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_mrkva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_mrkva"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_mrkva"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_mrkva"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_mrkva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/description_mrkva"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_mrkva"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_mrkva"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_dorian"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_walter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_dibek"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/restaurants_dibek"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_dibek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dibek"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_dibek"
+                    app:layout_constraintTop_toBottomOf="@+id/img_dibek" />
+
+                <TextView
+                    android:id="@+id/location_dibek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/location_dibek"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dibek"
+                    app:layout_constraintTop_toBottomOf="@+id/title_dibek"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_dibek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_dibek"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dibek"
+                    app:layout_constraintTop_toBottomOf="@+id/location_dibek"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_dibek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/dibek_hours"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dibek"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_dibek"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_dibek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:text="@string/description_dibek"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_dibek"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_dibek"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

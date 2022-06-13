@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/nightlifee"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nightlife_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/enjoy_the_nightlife_in_sarajevo_with_these_exceptional_places_we_have_prepared_for_you"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_sloga"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nightlife_welcome">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_sloga"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/nightlife_sloga"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_sloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cinemas_sloga"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_sloga"
+                    app:layout_constraintTop_toBottomOf="@+id/img_sloga" />
+
+                <TextView
+                    android:id="@+id/location_sloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/mehmeda_spahe_20_sarajevo_71000"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_sloga"
+                    app:layout_constraintTop_toBottomOf="@+id/title_sloga"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_sloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_sloga"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_sloga"
+                    app:layout_constraintTop_toBottomOf="@+id/location_sloga"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_sloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_sloga"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_sloga"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_sloga"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_sloga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/popular_night_spot_in_the_city_where_entertainment_awaits_latin_nights_are_held_each_monday_and_the_club_s_stage_is_occupied_by_regional_and_local_music_stars"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_sloga"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_sloga" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_walter"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_sloga">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_walter"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/nightlife_walter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_walter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/das_ist_walter_club"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_walter"
+                    app:layout_constraintTop_toBottomOf="@+id/img_walter" />
+
+                <TextView
+                    android:id="@+id/location_walter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/valtera_peri_a_16_sarajevo_71000"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_walter"
+                    app:layout_constraintTop_toBottomOf="@+id/title_walter"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_walter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_walter"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_walter"
+                    app:layout_constraintTop_toBottomOf="@+id/location_walter"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_walter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_walter"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_walter"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_walter"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_walter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/one_of_the_most_famous_clubs_in_sarajevo_will_make_you_enjoy_the_stunning_atmosphere_with_more_than_100_varieties_of_wine_and_20_types_of_beer_walter_will_make_everyone_sattisfied"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_walter"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_walter" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_dorian"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_walter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_dorian"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/nightlife_dorian"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_dorian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dorian_gray"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_dorian"
+                    app:layout_constraintTop_toBottomOf="@+id/img_dorian" />
+
+                <TextView
+                    android:id="@+id/location_dorian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/location_dorian"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dorian"
+                    app:layout_constraintTop_toBottomOf="@+id/title_dorian"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_dorian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/phone_dorian"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dorian"
+                    app:layout_constraintTop_toBottomOf="@+id/location_dorian"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_dorian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/hours_walter"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_dorian"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_dorian"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_dorian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/descripton_dorian"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_dorian"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_dorian" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

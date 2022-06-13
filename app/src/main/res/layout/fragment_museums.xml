@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/museums"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/museums_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/museumdesc"
+            android:textColor="@color/eggplant_primary"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_bjelasnica"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/museums_welcome">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_national"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/museums_national"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_national"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/national"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_national"
+                    app:layout_constraintTop_toBottomOf="@+id/img_national" />
+
+                <TextView
+                    android:id="@+id/location_national"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/national_location"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_national"
+                    app:layout_constraintTop_toBottomOf="@+id/title_national"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_national"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/national_phone"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_national"
+                    app:layout_constraintTop_toBottomOf="@+id/location_national"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_national"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/national_hours"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_national"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_national"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_national"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/national_description"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_national"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_national"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_walter"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_bjelasnica">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_literature"
+                    android:layout_width="match_parent"
+                    android:layout_height="265dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/museums_literature"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/literature"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_literature"
+                    app:layout_constraintTop_toBottomOf="@+id/img_literature" />
+
+                <TextView
+                    android:id="@+id/location_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/literature_location"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_literature"
+                    app:layout_constraintTop_toBottomOf="@+id/title_literature"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/literature_number"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_literature"
+                    app:layout_constraintTop_toBottomOf="@+id/location_literature"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/literature_hours"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_literature"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_literature"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/description_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/literature_description"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_literature"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_literature"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_dorian"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView_walter">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_olympic"
+                    android:layout_width="match_parent"
+                    android:layout_height="265dp"
+                    android:contentDescription="@string/restaurant_img"
+                    android:src="@drawable/museums_olympic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/title_olympic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/olympic"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/eggplant_primary"
+                    android:layout_marginStart="10dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/img_olympic"
+                    app:layout_constraintTop_toBottomOf="@+id/img_olympic" />
+
+                <TextView
+                    android:id="@+id/location_olympic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/olympic_location"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_olympic"
+                    app:layout_constraintTop_toBottomOf="@+id/title_olympic"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/phone_olympic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/olympic_number"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_olympic"
+                    app:layout_constraintTop_toBottomOf="@+id/location_olympic"
+                    app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+                <TextView
+                    android:id="@+id/hours_olympic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingTop="5dp"
+                    android:text="@string/olympic_hours"
+                    android:textColor="@color/eggplant_primary"
+                    app:layout_constraintStart_toStartOf="@+id/title_olympic"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_olympic"
+                    app:drawableStartCompat="@drawable/ic_baseline_hourglass_bottom_24" />
+
+
+                <TextView
+                    android:id="@+id/descrtiption_olympic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/olympic_description"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/location_olympic"
+                    app:layout_constraintTop_toBottomOf="@+id/hours_olympic"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

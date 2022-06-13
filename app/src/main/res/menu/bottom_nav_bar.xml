@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText"
+    android:iconTint="@color/navbar_item">
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"/>
+    <item android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/home"/>
+    <item android:title="@string/about_us"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:id="@+id/notifications"/>
+</menu>
